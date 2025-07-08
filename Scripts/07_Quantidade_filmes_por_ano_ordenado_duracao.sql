@@ -1,6 +1,6 @@
-SELECT Ano, COUNT(Ano) AS Quantidade ,  SUM(Duracao) AS DuracaoTotal
+SELECT Ano, COUNT(Ano) AS Quantidade
 FROM Filmes
 GROUP BY Ano
-ORDER BY DuracaoTotal DESC
+ORDER BY SUM(Duracao)  DESC
 
 
